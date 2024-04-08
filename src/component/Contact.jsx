@@ -19,14 +19,17 @@ function Contact() {
     }
     return (
         <>
-            <div className="w-4/5 h-4/5 backgroundeffect rounded border-2 border-solid border-blue-400 shadow-xl myeffect ">
+            <div className=" bg-blue-100 rounded h-screen w-full ">
                 <div className="w-full h-1/6 flex ">
-                    <h1 className="text-center text-7xl h-full basis-5/6 ">
-                        <pre> Contact</pre>
+                    <div>
+                        <button>add</button>
+                    </div>
+                    <h1 className="text-center text-7xl h-full basis-5/6 text-black ">
+                        Contact
                     </h1>
-                    <div className="basis-1/6 h-3/5 flex justify-end">
+                    <div className="basis-1/6 h-4/5 flex justify-end">
                         <Link to="/" className="text-2xl h-full rounded ">
-                            <button className="text-2xl h-full rounded-bl-full pl-5 pr-2 pt-1 ">
+                            <button className="text-2xl h-1/2 rounded-bl-full pl-5 pr-2 pt-1 ">
                                 <FontAwesomeIcon icon={faXmark} />
                             </button>
                         </Link>

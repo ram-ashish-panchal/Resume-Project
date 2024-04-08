@@ -37,6 +37,12 @@
     align-items: center;
 }
 
+.linkhover:hover{
+    border:1px solid blue;
+    background-color: blue;
+
+}
+
 
 
 input[type='file'] {
@@ -78,7 +84,18 @@ a {
 }
 a:hover {
     color: #f9f9f9;
+    
+    
 }
+
+.mylink:hover{
+    padding:10px;
+    padding-inline: 15px;
+    background-image: radial-gradient(rgb(241, 0, 254) ,rgb(82, 113, 238) );
+    transform: scale(1.2) translateX(10px);
+    border-radius: 3000px;
+}
+
 
 input:hover {
     border: 2px solid rgb(7, 7, 7);

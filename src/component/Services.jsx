@@ -45,19 +45,18 @@ function Services() {
     return (
         <>
             <div
-                id="services"
-                className="w-4/5 h-4/5 backgroundeffect rounded border-2 border-solid border-blue-400 shadow-xl myeffect "
+                className=" bg-blue-100 rounded h-screen w-full "
             >
                 <div className="w-full h-1/6 flex ">
                     <div className="basis-1/6 ">
-                        
+                        <button>add</button>
                     </div>
                     <div className="basis-4/6 text-center">
-                        <h1 className="w-full h-full text-7xl h-1/6  ">Education</h1>
+                        <h1 className="w-full h-full text-7xl h-1/6 text-black ">Education</h1>
                     </div>
-                    <div className="basis-1/6 h-3/5 flex justify-end">
+                    <div className="basis-1/6 h-4/5 flex justify-end">
                         <Link to="/" className="text-2xl h-full rounded ">
-                            <button className="text-2xl h-full rounded-bl-full pl-5 pr-2 pt-1 ">
+                            <button className="text-2xl h-1/2 rounded-bl-full pl-5 pr-2 pt-1 ">
                                 <FontAwesomeIcon icon={faXmark} />
                             </button>
                         </Link>
@@ -65,7 +64,7 @@ function Services() {
                 </div>
                 <div className="h-4/6 w-full flex flex-col myscroll ">
                     <div id='createdElements'>
-                        <div className=" w-full h-1/3 flex flex-col items-center justify-between">
+                        <div className=" w-full flex flex-col items-center justify-between" style={{height:'190px'}}>
                             <input onChange={(e)=>setinstitute1(e.target.value)} placeholder='Name of Institute' className="text-3xl w-4/5 px-5 rounded" type="text" style={{ height: '30%' }}></input>
                             <input onChange={(e)=>setcourse1(e.target.value)} placeholder='Course' type="text" className="text-3xl w-4/5 px-5 rounded" style={{ height: '30%' }}></input>
                             <input onChange={(e)=>settime1(e.target.value)} placeholder='Time period' type="text" className="text-3xl w-4/5 px-5 rounded" style={{ height: '30%' }}></input>
@@ -94,11 +93,11 @@ function Services() {
                     </div>
                 </div>
                 <div className=" w-full h-1/6 flex justify-center ">
-                    <Link to="/about" className="self-center">
+                    <Link to="/data" className="self-center">
                         <button className="text-xl w-full h-4/6 px-5 rounded">Back</button>
                     </Link>
                     <Link to="/contact" className="self-center">
-                        <button className="text-xl w-full h-4/6 px-5 rounded ml-4" onClick={storeData}>Next</button>
+                        <button className="text-xl w-full h-4/6 px-5 rounded ml-2" onClick={storeData}>Next</button>
                     </Link>
                 </div>
             </div>
