@@ -128,7 +128,7 @@ function Data() {
 
                     <div className=" w-full pl-28" style={{ height: '60px',width:"77.5%" }}>
                         <Link to="/services" className='flex justify-center'>
-                            <button className="text-xl w-full h-full px-5 rounded  " onClick={storeData}>
+                            <button className="text-xl w-full h-full px-5 rounded buttonclass2  " onClick={storeData}>
                                 Next
                             </button>
                         </Link>

@@ -70,8 +70,8 @@ function Basic() {
                             </p>
                             <br></br>
                             <div>
-                                <Link to='/data'><button>Create My Resume</button></Link>
-                                <button className="ml-2">Resume Examples</button>
+                                <Link to='/data'><button className='buttonclass1 bg-blue-700'>Create My Resume</button></Link>
+                                <button className="ml-2 ">Resume Examples</button>
                             </div>
                         </div>
                     </div>

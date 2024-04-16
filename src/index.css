@@ -4,6 +4,7 @@
 
 
 
+
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
@@ -15,9 +16,42 @@
     width: 100%;
     height: 100%;
 }
-.backgroundeffect {
-    background: linear-gradient(to bottom, rgb(0, 2, 8), rgb(37, 55, 252), rgb(0, 2, 8));
+
+
+.educationfield{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 190px;
 }
+
+.educationinput{
+    height: 30%;
+    padding-inline: 20px;
+    font-size: 30px;
+    width: 80%;
+    border-radius: 4px;
+}
+
+.skillinput1{
+    height: 83.33333%;
+    padding-inline:20px;
+    font-size:30px;
+    width:80%;
+    margin-bottom: 8px;
+    margin-left: 32px;
+    border-radius: 4px;
+}
+.skillinput2{
+    height: 50px;
+    padding-inline:20px;
+    font-size:30px;
+    width:80%;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
 #services {
     overflow-y: auto;
     scroll-behavior: smooth;
@@ -130,6 +164,15 @@ button {
 button:hover {
     border-color: black;
     background-color: rgb(21, 20, 20);
+}
+.buttonclass2:hover {
+    border-color: rgb(0, 255, 47);
+    background-color: rgb(78, 251, 139);
+    color: black;
+}
+.buttonclass1:hover {
+    border-color: rgb(6, 42, 248);
+    background-color: rgb(78, 83, 251);
 }
 button:focus,
 button:focus-visible {

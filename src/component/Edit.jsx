@@ -37,7 +37,7 @@ function Edit() {
 
     const skill = useSelector((state) => state.skills);
 
-    const [color, setcolor] = useState('#C0C0C0');
+    const [color, setcolor] = useState('white');
     const pdfRef = useRef();
     const [direction, setdirection] = useState('right');
 
@@ -49,85 +49,66 @@ function Edit() {
         <>
             <div className="w-full h-screen flex flex-col ">
                 <div className=" w-full h-1/6 bg-black flex flex-col border-4  border-solid border-black">
-                    <div className="bg-gray-600 h-2/6"></div>
+                    <div className="bg-gray-600 h-2/6">
+                        
+                    </div>
                     <div className=" h-4/6">
-                        <button
+                    <button
                             className="ml-2"
-                            style={{ backgroundColor: '#158FAD' }}
+                            style={{ backgroundColor: 'white' }}
                             onClick={() => {
-                                setcolor('#158FAD');
+                                setcolor('white');
                             }}
                         ></button>
                         <button
                             className="ml-2"
-                            style={{ backgroundColor: '#54B9C1' }}
-                            onClick={() => setcolor('#54B9C1')}
+                            style={{ backgroundColor: '#C0C0C0' }}
+                            onClick={() => {
+                                setcolor('#C0C0C0');
+                            }}
+                        ></button>
+                        <button
+                            className="ml-2"
+                            style={{ backgroundColor: '#CBD7BF' }}
+                            onClick={() => setcolor('#CBD7BF')}
                         ></button>
 
                         <button
                             className="ml-2"
-                            style={{ backgroundColor: '#FFE469' }}
-                            onClick={() => setcolor('#FFE469')}
+                            style={{ backgroundColor: '#FAE3B9' }}
+                            onClick={() => setcolor('#FAE3B9')}
                         ></button>
                         <button
                             className="ml-2"
-                            style={{ backgroundColor: '#FFFF99' }}
-                            onClick={() => setcolor('#FFFF99')}
+                            style={{ backgroundColor: '#ebdbfd' }}
+                            onClick={() => setcolor('#ebdbfd')}
                         ></button>
                         <button
                             className="ml-2"
-                            style={{ backgroundColor: '#20C997' }}
-                            onClick={() => setcolor('#20C997')}
+                            style={{ backgroundColor: '#E7FFCE' }}
+                            onClick={() => setcolor('#E7FFCE')}
                         ></button>
                         <button
                             className="ml-2"
-                            style={{ backgroundColor: '#6ACCBC' }}
-                            onClick={() => setcolor('#6ACCBC')}
+                            style={{ backgroundColor: '#FFF5ED' }}
+                            onClick={() => setcolor('#FFF5ED')}
                         ></button>
 
                         <button
                             className="ml-2"
-                            style={{ backgroundColor: '#4169E1' }}
-                            onClick={() => setcolor('#4169E1')}
+                            style={{ backgroundColor: '#CAF0F8' }}
+                            onClick={() => setcolor('#CAF0F8')}
                         ></button>
                         <button
                             className="ml-2"
-                            style={{ backgroundColor: '#6495ED' }}
-                            onClick={() => setcolor('#6495ED')}
+                            style={{ backgroundColor: '#e0d6ff' }}
+                            onClick={() => setcolor('#e0d6ff')}
                         ></button>
-                        <button
-                            className="ml-2"
-                            style={{ backgroundColor: '#7D73B5' }}
-                            onClick={() => setcolor('#7D73B5')}
-                        ></button>
-                        <button
-                            className="ml-2"
-                            style={{ backgroundColor: '#A4A4EB' }}
-                            onClick={() => setcolor('#A4A4EB')}
-                        ></button>
-                        <button
-                            className="ml-2"
-                            style={{ backgroundColor: '#EA4E6E' }}
-                            onClick={() => setcolor('#EA4E6E')}
-                        ></button>
-                        <button
-                            className="ml-2"
-                            style={{ backgroundColor: '#DD9AC0' }}
-                            onClick={() => setcolor('#DD9AC0')}
-                        ></button>
-                        <button
-                            className="ml-2"
-                            style={{ backgroundColor: '#FF4F12' }}
-                            onClick={() => setcolor('#FF4F12')}
-                        ></button>
-                        <button
-                            className="ml-2"
-                            style={{ backgroundColor: '#FF946D' }}
-                            onClick={() => setcolor('#FF946D')}
-                        ></button>
+                        
+                        
                     </div>
 
-                    <div></div>
+                    
                 </div>
                 <div className=" w-full h-5/6 flex bg-gray-600 items-center justify-around rounded-b-4 border-4  border-solid border-black  ">
                     <div className="bg-black" style={{ width: '23%', height: '98%' }}>
@@ -208,13 +189,20 @@ function Edit() {
                                 </h1>
                                 <hr className="mt-0.5 border-black"></hr>
                                 <br></br>
-                                <div className="grid grid-rows-2 grid-cols-3 gap-1 font-semibold " style={{color:color}}>
-                                    <button className="ml-20">{skill[0]}</button>
-                                    <button className="ml-20">{skill[1]}</button>
-                                    <button className="ml-20">{skill[2]}</button>
-                                    <button className="ml-20">{skill[3]}</button>
-                                    <button className="ml-20">{skill[4]}</button>
-                                    <button className="ml-20">{skill[5]}</button>
+                                <div className="grid grid-rows-2 grid-cols-4 gap-1 font-semibold " style={{color:color}}>
+                                    <button className="ml-10">{skill[0]}</button>
+                                    <button className="ml-10">{skill[1]}</button>
+                                    <button className="ml-10">{skill[2]}</button>
+                                    <button className="ml-10">{skill[3]}</button>
+                                    <button className="ml-10">{skill[4]}</button>
+                                    <button className="ml-10">{skill[5]}</button>
+                                    <button className="ml-10">{skill[6]}</button>
+                                    <button className="ml-10">{skill[7]}</button>
+                                    <button className="ml-10">{skill[8]}</button>
+                                    <button className="ml-10">{skill[9]}</button>
+                                    <button className="ml-10">{skill[10]}</button>
+                                    <button className="ml-10">{skill[11]}</button>
+                                    
                                 </div>
                             </div>
                         </div>
